@@ -1,0 +1,5 @@
+Read the challenge file using /challenge/babysuid_level19
+Check SUID permissions using ls -la /challenge/babysuid_level19. U will find /usr/bin/zip file 
+Try to read the flag file as /usr/bin/zip /flag but it will show error and hint as flag.zip. 
+Firs use this command zip /flag.zip /flag
+Then use unzip -p /flag.zip and flag will show up.
