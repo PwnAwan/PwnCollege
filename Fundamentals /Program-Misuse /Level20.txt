@@ -2,4 +2,4 @@ Read the challenge file using /challenge/babysuid_level20
 Check SUID permissions using ls -la /challenge/babysuid_level20. U will find /usr/bin/tar file 
 Try to read the flag file as /usr/bin/tar /flag but the flag will not show. 
 First, use tar cf flag.tar /flag   
-Then use tar -Oxf /flag.tar The flag will show.
+Then use tar -Oxf /flag.tar The flag will show. (in Oxf "O" Capital ow/au) 
