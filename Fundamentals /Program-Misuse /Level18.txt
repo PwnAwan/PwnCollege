@@ -1,0 +1,4 @@
+Read the challenge file using /challenge/babysuid_level18
+Check SUID permissions using ls -la /challenge/babysuid_level18. U will find /usr/bin/bzip2 file 
+Try to read the flag file as /usr/bin/bzip2 /flag but the flag will not show. 
+Use bzgrep command with pattern to read flag as bzgrep . /flag.bz2. You must use (dot) otherwise flag will not show
