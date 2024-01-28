@@ -1,0 +1,7 @@
+Read the challenge file using /challenge/babysuid_level22
+Check SUID permissions using ls -la /challenge/babysuid_level22. U will find /usr/bin/tar file 
+Try to read the flag file as /usr/bin/cpio /flag but the flag will not show. 
+Take a list of file names from standard input and add them [o]nto an archive in cpio's binary format:
+echo "{{file1}} {{file2}} {{file3}}" | cpio -o
+echo "/flag" | cpio -o It will show the flag
+
