@@ -1,0 +1,4 @@
+Read the challenge file using /challenge/babysuid_level37
+Check SUID permissions using ls -la /challenge/babysuid_level37.  
+Try to read the flag file as /usr/bin/chown /flag but the flag will not show. 
+chown -c hacker /flag 
