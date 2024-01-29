@@ -1,0 +1,4 @@
+Read the challenge file using /challenge/babysuid_level27
+Check SUID permissions using ls -la /challenge/babysuid_level27.  
+Try to read the flag file as /usr/bin/nice /flag but the flag will not show. 
+nice cat /flag
