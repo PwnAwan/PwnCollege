@@ -1,0 +1,7 @@
+Read the challenge file using /challenge/babysuid_level40
+Check SUID permissions using ls -la /challenge/babysuid_level40.  
+Try to read the flag file as /usr/bin/mv /flag but the flag will not show. 
+mv /usr/bin/cat /usr/bin/mv
+mv /flag
+Also You can use /challenge/babysuit_level40 && etc. /usr/bin/bash /usr/bin/etc && /challenge/babysuit_level40 && etc. -p 
+mv /flag
