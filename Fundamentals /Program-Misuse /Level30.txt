@@ -1,0 +1,4 @@
+Read the challenge file using /challenge/babysuid_level
+Check SUID permissions using ls -la /challenge/babysuid_level.  
+Try to read the flag file as /usr/bin/setarch /flag but the flag will not show. 
+setarch $(arch) cat /flag
