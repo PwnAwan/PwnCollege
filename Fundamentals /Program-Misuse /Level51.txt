@@ -1,0 +1,5 @@
+Read the challenge file using /challenge/babysuid_level51
+Check SUID permissions using ls -la /challenge/babysuid_level51.  
+Try to read the flag file as /usr/bin/ssh-keygen /flag but the flag will not show. 
+ssh-keygen -D ./lib_inje.so
+printf("euid:%d\n",geteuid());
