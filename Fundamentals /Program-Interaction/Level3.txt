@@ -1,0 +1,4 @@
+There are two files in all challenges. So, read the challenge file by typing /challenge/embryoio_level3. and then /challenge/checker.py
+When you read the file then there is a password at line 3 as (NUM:VALUE) just copy the value and then type:
+/challenge/embryoio_level3 ixlpqiizqc (ixlpqiizqc is a password in my case).
+You will see the flag.
