@@ -1,0 +1,4 @@
+There are two files in all challenges. So, read the challenge file by typing /challenge/embryoio_level4. and then /challenge/checker.py
+You will see env variable with value at 3rd line. You just need to export this variable with value as 
+export yqxjyb=isdvinxiir 
+Now again try to read the file as /challenge/embryoio_level4. It will show the flag.
