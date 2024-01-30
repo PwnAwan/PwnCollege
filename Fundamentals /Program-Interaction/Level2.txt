@@ -1,0 +1,3 @@
+Read the challenge file using /challenge/embryoio_level
+It will ask for the password (Password is given in instruction file just copy, paste and enter. 
+It will show the flag. Wrong password will not be entertained. So, read the challenge file intentionally.
