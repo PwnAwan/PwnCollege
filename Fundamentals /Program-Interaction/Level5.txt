@@ -1,0 +1,7 @@
+There are two files in some challenges. So, read the challenge file by typing /challenge/embryoio_level5. and then /challenge/checker.py
+This challenge input is redirecting from a specific path /tmp/cggrnc. The challenge will check the hardcroded password over stdin. 
+The password in this case is "mgukdapc".
+Go to /tmp as cd /tmp. Create file with the given password input in file as 
+echo "mgukdapc" > cggrnc
+Then type /challenge/embryoio_level5 < /tmp/cggrnc and hit enter
+The flag will show up.
