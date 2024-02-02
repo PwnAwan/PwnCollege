@@ -1,0 +1,12 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level12 and then /challenge/checker.py.
+In addition to creating the script, input redirection is also required in this challenge.
+
+We need to create a shellscript file in /tmp/yujbjc directory with this password "uphcfwxv" with the following content.
+name shellscript.sh
+" #!/bin/bash 
+echo "uphcfwxv" > /tmp/yujbjc
+/challenge/embryoio_level12 < /tmp/yujbjc "
+Then change the permissions by using the following:
+chmod +x shellscript.sh 
+./shellscript.sh
+The flag will show.
