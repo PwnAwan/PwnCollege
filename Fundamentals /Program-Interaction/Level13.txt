@@ -1,0 +1,11 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level13 and then /challenge/checker.py.
+In addition to creating the script, output redirection is also required in this challenge. The redirection path is /tmp/tivhvl
+We need to create a shellscript file in /tmp/ directory with the following content.
+name shellscript.sh
+" #!/bin/bash 
+/challenge/embryoio_level13 >> /tmp/tivhvl 
+cat /tmp/tivhvl "
+Then change the permissions by using the following:
+chmod +x shellscript.sh 
+./shellscript.sh
+The flag will show.
