@@ -1,0 +1,9 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level9. and then /challenge/checker.py.
+This challenge is also a shellscript challenge but with protected with password. 
+We need to create a shellscript file in /tmp directory with the following script or content in the file.
+name shellscript.sh
+#!/bin/bash
+echo "pjbzkxbo" | /challenge/embryoio_level9
+chmod +x shellscript.sh
+./shellscript.sh
+The flag will show.
