@@ -1,0 +1,9 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level8. and then /challenge/checker.py.
+This is a shellscript challenge. So, you need to create a shellscript to obtain the flag buy running it.
+So go to /tmp directory and create a "shellscript.sh" file.
+The content in the shellscript.sh is 
+#!/bin/bash
+/challenge/embryoio_level8
+Close the file and change permissions as
+chmod +x shellscript.sh and the run the file as
+./shellscript.sh
