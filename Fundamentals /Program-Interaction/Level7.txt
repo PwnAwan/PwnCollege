@@ -1,0 +1,5 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level7. and then /challenge/checker.py.
+This is the challenge in which you have to redirect the output.
+This challenge requires setting empty environment variables.
+so set environment variable as env -i <program>.
+in this case " env -i /challenge/embryoio_level7 ". The flag will show
