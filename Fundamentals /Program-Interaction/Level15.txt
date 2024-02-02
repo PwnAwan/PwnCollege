@@ -1,0 +1,6 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level15 and then /challenge/checker.py.
+In this challenge requires ipython to run the program, but directly enter ipython and use the command. 
+We need to create an ipython file in /tmp/ directory with the following content.
+name ipython.py
+import subprocess;subprocess.run(["/challenge/embryoio_level15"])
+The flag will show.
