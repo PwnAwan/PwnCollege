@@ -1,0 +1,6 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level6. and then /challenge/checker.py.
+This is the challenge in which you have to redirect the output.
+After reading the challenge you will see a hint on the 3rd line as /tmp/tzdetd.
+So you can create a blank file using touch as "touch tzdetd in /tmp directory.
+After creating a file redirect the challenge file output in the /tmp/tzdetd file as: /challenge/rmryoio_level6 >> /tmp/tzdetd
+Use cat to read /tmp/tzdetd. The flag will show.
