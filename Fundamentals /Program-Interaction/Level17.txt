@@ -1,0 +1,8 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level17 and then /challenge/checker.py.
+In this challenge we need to pass parameter&password that is require ipython to run the program. The parameter is 1 and the password is "fkfxeulkjy".
+We need to create an ipython file in /tmp/ directory with the following content.
+name ipython.py
+import subprocess;subprocess.run(["/challenge/embryoio_level17"])
+export 1=fkfxeulkjy
+Run the script as python ipython.py 
+The flag will show.
