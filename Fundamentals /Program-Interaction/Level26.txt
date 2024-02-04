@@ -1,0 +1,15 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level26 and then /challenge/checker.py.
+The challenge will check that input is redirected from a specific file path : /tmp/dkxwxj
+The challenge will check for a hardcoded password over stdin : nqsotmwk
+name ipython.py
+from pwn import *
+import os
+import sys
+with open("/tmp/dkxwxj", 'w') as f:
+    f.write("nqsotmwk")
+fd = os.open("/tmp/dkxwxj", os.O_RDONLY)
+p = process(["/challenge/embryoio_level26"],stdin=fd)
+print(fd)
+p.interactive()
+Run the script as python ipython.py 
+The flag will show.
