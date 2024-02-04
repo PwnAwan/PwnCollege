@@ -1,0 +1,8 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level24 and then /challenge/checker.py.
+The challenge will check that argv[NUM] holds value VALUE (listed to the right as NUM:VALUE) : 1:gdncphvdkz
+from pwn import *
+import os
+import sys
+p = process(["/challenge/embryoio_level24","gdncphvdkz"])
+p.interactive()
+The flag will show.
