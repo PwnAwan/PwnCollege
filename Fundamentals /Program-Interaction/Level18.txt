@@ -1,0 +1,9 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level18 and then /challenge/checker.py.
+In this challenge, we must pass add the environment variable with value as given in the challenge is  "oimmnv:odnwljdwtq".
+We must create an ipython file in the /tmp/ directory with the following content.
+name ipython.py
+from pwn import *
+p = process(["/challenge/embryoio_level18"],env={"oimmnv":"odnwljdwtq"})
+p.interactive()
+Run the script as python ipython.py 
+The flag will show.
