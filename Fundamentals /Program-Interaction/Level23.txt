@@ -1,0 +1,7 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level23 and then /challenge/checker.py.
+The challenge will check for a hardcoded password over stdin : nnwzvnjf 
+name ipython.py
+import subprocess
+subprocess.run("/challenge/embryoio_level23")
+Run the script as python ipython.py and enter the password, in this case "nnwzvnjf"
+The flag will show.
