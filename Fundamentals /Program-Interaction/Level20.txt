@@ -1,0 +1,14 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level20 and then /challenge/checker.py.
+In this challenge, we must redirect the input at this path "/tmp/ktcwzq" 
+name ipython.py
+from pwn import *
+import os
+# with open("/tmp/ktcwzq", 'w') as f:
+fd = os.open("/tmp/ktcwzq", os.O_RDWR)
+print(fd)
+p = process(["/challenge/embryoio_level20"],stdout=fd)
+with open("/tmp/ktcwzq", 'r') as f:
+    print(f.read())
+p.interactive()
+Run the script as python ipython.py 
+The flag will show.
