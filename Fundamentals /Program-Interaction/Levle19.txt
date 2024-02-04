@@ -1,0 +1,14 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level19 and then /challenge/checker.py.
+In this challenge, we must pass redirect the input So we pass the stdin parameter for input redirection at this path "/tmp/gzxehm" and the password
+is "yltuzpik".
+name ipython.py
+from pwn import *
+import os
+with open("/tmp/gzxehm", 'w') as f:
+  f.write("yltuzpik")
+fd = os.open("/tmp/gzxehm", os.O_RDONLY)
+print(fd)
+p = process(["/challenge/embryoio_level19"],stdin=fd)
+p.interactive()
+Run the script as python ipython.py 
+The flag will show.
