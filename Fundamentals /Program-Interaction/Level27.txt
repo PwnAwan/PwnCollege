@@ -1,0 +1,14 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level27 and then /challenge/checker.py.
+The challenge will check that output is redirected to a specific file path : /tmp/hyylsy
+name ipython.py
+from pwn import *
+import os
+import sys
+with open("/tmp/hyylsy", 'w') as f:
+    f.write("test")
+fd = os.open("/tmp/hyylsy", os.O_RDWR)
+print(fd)
+p = process(["/challenge/embryoio_level27"],stdout=fd)
+p.interactive()
+Run the script as python ipython.py 
+The flag will show.
