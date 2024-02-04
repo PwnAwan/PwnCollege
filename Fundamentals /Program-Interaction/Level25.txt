@@ -1,0 +1,10 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level25 and then /challenge/checker.py.
+the challenge will check that env[KEY] holds value VALUE (listed to the right as KEY:VALUE) : fvrsji:zcnrdckmtg
+name ipython.py
+from pwn import *
+import os
+import sys
+p = process(["/challenge/embryoio_level25"],env={"fvrsji" : "zcnrdckmtg"})
+p.interactive()
+Run the script as python ipython.py 
+The flag will show.
