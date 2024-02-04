@@ -1,0 +1,30 @@
+There are two files in this challenge. So, read the challenge file by typing /challenge/embryoio_level25 and then /challenge/checker.py.
+The challenge checks for a specific parent process : binary
+#include <stdio.h>
+#include <unistd.h>
+
+void pwncollege(char* argv[],char *env[]){
+        char *newenv1[]={'bash',"/home/hacker/Desktop/sc.sh",NULL};
+        char *newenv2[]={NULL};
+        execve("/challenge/embryoio_level29",newenv2,newenv2);
+        return ;
+}
+
+int main(int argc,char* argv[],char* env[]){
+        pid_t fpid;
+        fpid=fork();
+        if(fpid<0)
+                printf("error in fork!\n");
+        else if (fpid==0){
+                printf("I am the child process\n");
+                pwncollege(argv,env);
+        }
+        else{//fpid==1 is the parent process
+                printf("I am the parent process\n");
+                wait(NULL);
+        }
+        return 0;
+}
+
+Compile and then run the script as 
+The flag will show.
