@@ -1,0 +1,31 @@
+Read the challenge file by typing /challenge/embryoio_level32.
+The challenge checks for a specific parent process : binary
+The challenge will check that env[KEY] holds value VALUE (listed to the right as KEY:VALUE) : cmsqbm:uwcflypzfz
+#include <stdlib.h> 
+#include <stdio.h> 
+void pwncollege() 
+{ 
+    
+} 
+int main() 
+{  
+    const char filename[100] = "/challenge/embryoio_level32";
+    pid_t cpid;
+    char * envp[] = {"cmsqbm=uwcflypzfz" , NULL}; 
+   char *argv[] = {NULL};
+    int newfd;
+    dup2(0, newfd);
+    if (fork() == 0)
+    {
+        execve(filename, argv, envp);
+        exit(0);
+    }
+    else
+        cpid = wait(NULL);
+} 
+
+
+Compile and run the script as:
+gcc script.c -o script
+Type ./script and hit enter.
+The flag will show.
