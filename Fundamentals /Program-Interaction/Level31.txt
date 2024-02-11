@@ -1,0 +1,31 @@
+Read the challenge file by typing /challenge/embryoio_level31
+The challenge checks for a specific parent process : binary
+The challenge will check that argv[NUM] holds value VALUE (listed to the right as NUM:VALUE) : 1:pkzsntymeh
+#include <stdlib.h> 
+#include <stdio.h> 
+void pwncollege() 
+{ 
+    
+} 
+int main() 
+{  
+    const char filename[100] = "/challenge/embryoio_level31";
+    pid_t cpid;
+    char **buff = "pkzsntymeh";
+    char *argv[] = {filename, "pkzsntymeh", NULL};
+    //args[0] = "pkzsntymeh";
+    int newfd;
+    dup2(0, newfd);
+    if (fork() == 0)
+    {
+        execve(filename, argv, NULL);
+        exit(0);
+    }
+    else
+        cpid = wait(NULL);
+} 
+
+Compile and run the script as:
+gcc script.c -o script
+Type ./script and hit enter.
+The flag will show.
