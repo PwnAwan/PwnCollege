@@ -1,0 +1,27 @@
+Read the challenge file by typing /challenge/embryoio_level30 
+The challenge checks for a specific parent process : binary
+The challenge will check for a hardcoded password over stdin : slibtmfk
+#include <stdlib.h> 
+#include <stdio.h> 
+void pwncollege() 
+{ 
+    
+} 
+int main() 
+{  
+    const char filename[100] = "/challenge/embryoio_level30";
+    pid_t cpid;
+    if (fork() == 0)
+    {
+        execve(filename, NULL, NULL);
+        exit(0);
+    }
+    else
+        cpid = wait(NULL);
+} 
+
+
+Compile and run the script as:
+gcc script.c -o script
+Type ./script and hit enter. The challenge will ask for the password. In this case the password is slibtmfk. Enter the password and hit enter.
+The flag will show.
