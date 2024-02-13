@@ -1,0 +1,95 @@
+Read the challenge file by typing /challenge/embryoio_level33 
+The challenge checks for a specific parent process : binary
+The challenge will check that input is redirected from a specific file path : /tmp/ketaow
+The challenge will check for a hardcoded password over stdin : xbpjmbwn
+#include <stdlib.h> 
+#include <stdio.h> 
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+void pwncollege() 
+{ 
+    
+} 
+int main() 
+{  
+    const char filename[100] = "/challenge/embryoio_level33";
+    pid_t cpid; 
+    char **buff = "xbpjmbwn";
+    char *argv[] = {NULL};
+    char *envp[] = {NULL};
+    int newfd = open("/tmp/ketaow", O_CREAT || O_APPEND);
+    dup2(newfd, 0);
+    if (fork() == 0)
+    {
+        execve(filename, argv, envp);
+        if (fork() == 0){
+            dup2(0, newfd);
+            int num = write(newfd, buff, 100);
+            print("%d", num);
+        }else
+        {
+            cpid = wait(NULL);
+        }
+        exit(0);
+    }
+    else
+        cpid = wait(NULL);
+} 
+------------------------------------------------------------------------------------------------------------------------------------------------
+# include  <unistd.h> 
+# include  <sys/types.h> 
+# include  <sys/stat.h> 
+# include  <stdlib.h> 
+# include  <stdio.h> 
+# include  <fcntl.h> 
+
+void  pwncollege () 
+{ 
+    return ; 
+} 
+
+
+int  main ( void ) 
+{ 
+    pid_t  pid; 
+    int  fd; 
+
+    fd =  open ( "/tmp/ketaow" , O_RDWR); 
+    // write(fd, "mrqhmacp\n", 9); 
+
+    if  (fd <  0 )  
+    { 
+        perror ( "open" ); 
+        return  EXIT_FAILURE; 
+    } 
+
+    if  ((pid = fork()) <  0 )  
+    { 
+        perror ( "fork" ); 
+        return  EXIT_FAILURE; 
+    }  
+    else  if  (! pid)  
+    {  
+        /* child */ 
+        dup2  (fd, STDIN_FILENO); 
+        close (fd); 
+        execlp ( "/challenge/embryoio_level33" ,  "embryoio_level33" ,  NULL ); 
+        perror ( "exec" ); 
+        return  EXIT_FAILURE; 
+    }  
+    else  
+    {  
+        /* parent */ 
+        close (fd); 
+        printf ( "Parent waiting\n" ); 
+        getchar (); 
+    } 
+
+    return  EXIT_SUCCESS; 
+} 
+------------------------------------------------------------------------------------------------------------------------------------------------
+Compile and run the script as:
+gcc script.c -o script
+Type ./script and hit enter.
+The flag will show.
