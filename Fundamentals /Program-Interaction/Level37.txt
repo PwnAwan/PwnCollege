@@ -1,0 +1,38 @@
+Read the challenge file by typing /challenge/embryoio_level37
+The challenge checks for a specific parent process : bash
+The challenge checks for a specific process at the other end of stdout : grep
+#include <stdlib.h> 
+#include <stdio.h> 
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+void pwncollege() 
+{ 
+    
+} 
+int main() 
+{  
+    const char filename[100] = "/challenge/embryoio_level37";
+    pid_t cpid; 
+    char **buff[1000];
+    char *argv[] = {NULL};
+    char *envp[] = {NULL};
+    int newfd = open("/tmp/iopcto", O_RDWR | O_CREAT, 0666);
+    write(1, buff, read(newfd, buff, 1000));
+    
+    if (fork() == 0)
+    {
+        system(filename);
+        int pipfd[2];
+        pipe(pipfd);
+        execve(filename, argv, envp);
+        exit(0);
+    }
+    else
+        cpid = wait(NULL);
+} 
+
+Compile and run the script as:
+gcc script.c -o bash
+Type ./bash | grep "pwn" and hit enter.
+The flag will show.
