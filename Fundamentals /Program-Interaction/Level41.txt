@@ -1,0 +1,9 @@
+Read the challenge file by typing /challenge/embryoio_level40
+The challenge checks for a specific parent process : bash
+The challenge checks for a specific process at the other end of stdin : rev
+The challenge will check for a hardcoded password over stdin : sitzffbr
+
+Compile and run the script as:
+gcc script.c -o bash
+Type ./bash | grep "pwn" and hit enter.
+The flag will show.
