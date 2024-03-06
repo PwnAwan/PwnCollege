@@ -1,0 +1,10 @@
+Read the challenge file by typing /challenge/embryoio_level46
+The challenge checks for a specific parent process : shellscript
+The challenge checks for a specific process at the other end of stdin : cat
+The challenge will check for a hardcoded password over stdin : ouqsonmt
+
+Write the script as:
+#!/bin/bash
+cat | /challenge/embryoio_level46 
+Run the script as "bash scriptl42.sh"  and then enter the password "ouqsonmt".
+The flag will show.
