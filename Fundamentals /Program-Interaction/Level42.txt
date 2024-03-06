@@ -1,0 +1,9 @@
+Read the challenge file by typing /challenge/embryoio_level42
+The challenge checks for a specific parent process : shellscript
+The challenge checks for a specific process at the other end of stdout : cat
+
+Write and run the script as:
+#!/bin/bash
+/challenge/embryoio_level42 | cat 
+bash script.sh
+The flag will show.
