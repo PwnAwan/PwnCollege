@@ -1,8 +1,9 @@
 Read the challenge file by typing /challenge/embryoio_level43
-The challenge checks for a specific parent process : bash
+The challenge checks for a specific parent process : shellscript
+The challenge checks for a specific process at the other end of stdout : grep
 
-//Compile and run the script as:
-//gcc script.c -o bash
-Type rev | /challenge/embryoio_level41 and hit enter.
-enter the password in reverse order as "rbffztis".
+Write the script as:
+#!/bin/bash
+/challenge/embryoio_level43 | grep pwn
+Run the script as "bash scriptl42.sh"
 The flag will show.
