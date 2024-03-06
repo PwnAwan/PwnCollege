@@ -1,0 +1,8 @@
+Read the challenge file by typing /challenge/embryoio_level43
+The challenge checks for a specific parent process : bash
+
+//Compile and run the script as:
+//gcc script.c -o bash
+Type rev | /challenge/embryoio_level41 and hit enter.
+enter the password in reverse order as "rbffztis".
+The flag will show.
