@@ -6,5 +6,6 @@ The challenge will check for a hardcoded password over stdin : icgtasos
 Write the script as:
 #!/bin/bash
 rev | /challenge/embryoio_level47
-Run the script as "bash my_script.sh"  and then enter the password "icgtasos".
+Run the script as "bash my_script.sh"  and then enter the password in reverse as "sosatgci".
+But it will not show the flag. Just enter ctrl+d to view the flag.
 The flag will show.
