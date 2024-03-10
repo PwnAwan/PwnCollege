@@ -1,0 +1,12 @@
+Read the challenge file by typing /challenge/embryoio_level56
+The challenge checks for a specific parent process : python
+The challenge checks for a specific process at the other end of stdout : sed
+Write the script.py code as:
+import subprocess as sp
+x = sp.Popen(['/challenge/embryoio_level56'], stdout=sp.PIPE, stderr=sp.PIPE)
+# o = sp.Popen(['rev'], stdin=x.stdout, stdout=sp.PIPE, stderr=sp.PIPE)
+out = sp.Popen(['sed', '-n', '5,100p'], stdin=x.stdout, stdout=sp.PIPE)
+r, e = out.communicate()
+print(r.decode())
+Run the command as python script.py  
+The flag will show.
