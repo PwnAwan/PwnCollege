@@ -6,5 +6,6 @@ The challenge will check for a hardcoded password over stdin : sitzffbr
 //Compile and run the script as:
 //gcc script.c -o bash
 Type rev | /challenge/embryoio_level41 and hit enter.
-enter the password in reverse order as "rbffztis".
+enter the password in reverse order as "rbffztis". 
+But it doesn't show the flag. Just enter ctrl+d to view the flag. In this challenge ctrl+d terminate the process but still the flag doesn't show in VSCode terminal. I use ssh connection and it works.
 The flag will show.
