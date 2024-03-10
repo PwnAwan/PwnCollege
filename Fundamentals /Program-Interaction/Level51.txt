@@ -1,0 +1,11 @@
+Read the challenge file by typing /challenge/embryoio_level51
+The challenge checks for a specific parent process : ipython
+the challenge checks for a specific process at the other end of stdout : rev
+I use ipython python.py but it doesn't shows the flag. Then I type simple ipython in terminal and then paste the belwo code. It shows the flag.
+Write the script code as:
+import subprocess as sp
+o = sp.Popen(['/challenge/embryoio_level50'], stdout=sp.PIPE, stderr=sp.PIPE)
+out = sp.Popen(['rev'], stdin=o.stdout, stdout=sp.PIPE)
+r, e = out.communicate()
+print(r.decode())
+Use CyberChef to reverse the flag.
