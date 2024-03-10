@@ -1,0 +1,13 @@
+Read the challenge file by typing /challenge/embryoio_level58
+The challenge checks for a specific parent process : python
+The challenge checks for a specific process at the other end of stdout : cat
+The challenge will check for a hardcoded password over stdin : nvvbglzi
+Write the script.py code as:
+import subprocess as sp
+x = sp.Popen(['cat'], stdout=sp.PIPE, stderr=sp.PIPE)
+# o = sp.Popen(['rev'], stdin=x.stdout, stdout=sp.PIPE, stderr=sp.PIPE)
+out = sp.Popen(['/challenge/embryoio_level58'], stdin=x.stdout, stdout=sp.PIPE)
+r, e = out.communicate()
+print(r.decode())
+Run the command as python script.py and enter the password, in this case "nvvbglzi"
+The flag will show.
