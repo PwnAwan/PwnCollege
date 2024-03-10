@@ -1,0 +1,15 @@
+Read the challenge file by typing /challenge/embryoio_level53
+The challenge checks for a specific parent process : ipython
+The challenge checks for a specific process at the other end of stdin : rev
+The challenge will check for a hardcoded password over stdin : iwwfczzn
+I use ipython python.py but it doesn't shows the flag. Then I type simple ipython in terminal and then paste the belwo code. 
+Write the script code as:
+import subprocess as sp
+x = sp.Popen(['rev'], stdout=sp.PIPE, stderr=sp.PIPE)
+o = sp.Popen(['rev'], stdin=x.stdout, stdout=sp.PIPE, stderr=sp.PIPE)
+out = sp.Popen(['/challenge/embryoio_level53'], stdin=o.stdout, stdout=sp.PIPE)
+r, e = out.communicate()
+print(r.decode())
+Then enter the password, in this case "iwwfczzn".
+After entering the password it doesn't show the flag. You need to press ctrl+d to view the flag.
+The flag will show.
