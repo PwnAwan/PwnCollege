@@ -1,0 +1,4 @@
+The challenge checks for a specific parent process : find
+
+Run this command to find the flag.
+find /challenge -type f -exec /challenge/embryoio_level66 \;
