@@ -1,0 +1,4 @@
+The challenge checks for a specific parent process : find
+The challenge will check that argv[NUM] holds value VALUE (listed to the right as NUM:VALUE) : 1:xuovoiuvrx
+Use this command to find the flag
+find /challenge -type f -exec /challenge/embryoio_level67 xuovoiuvrx \;
