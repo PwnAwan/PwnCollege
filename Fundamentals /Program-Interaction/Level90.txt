@@ -1,0 +1,11 @@
+Read the challenge file by typing /challenge/embryoio_level90
+The challenge checks for a specific parent process : shellscript
+The challenge will make sure that stdin is redirected from a fifo
+The challenge will check for a hardcoded password over stdin : dagwnzgs
+Write the script.sh code as:
+#!/usr/bin/env
+rm /tmp/testfifo
+mkfifo /tmp/testfifo
+/challenge/embryoio_level90 < /tmp/testfifo
+Run the command as bash script.sh in one terminal and run "echo dagwnzgs > /tmp/testfifo" in other terminal(both at the same time like 1st and 2nd).
+It will execute the first terminal command and show the flag.
