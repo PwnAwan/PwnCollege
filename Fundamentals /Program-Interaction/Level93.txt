@@ -1,0 +1,6 @@
+The challenge checks for a specific parent process : shellscript
+The challenge will take input on a specific file descriptor : 329
+The challenge will check for a hardcoded password over stdin : zecvhtgi
+Write the bash script as 
+echo zecvhtgi | /challenge/embryoio_level94 329<&0
+Run the script as bash script.sh and It will show the flag.
