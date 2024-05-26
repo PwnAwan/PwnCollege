@@ -1,0 +1,16 @@
+The challenge checks for a specific parent process : python
+The challenge will force the parent process to solve a number of arithmetic problems : 5
+The challenge will use the following arithmetic operations in its arithmetic problems : +*%
+The complexity (in terms of nested expressions) of the arithmetic problems : 3
+Write the python script as 
+from pwn import *
+p=process("/challenge/embryoio_level100")
+
+for i in range(5):
+    p.recvuntil("CHALLENGE! Please send the solution for: ")
+    data=p.recv()
+    p.sendline(str(eval(data)))
+
+p.interactive()
+
+Run the script as python script.py and it will show the flag.
