@@ -1,0 +1,7 @@
+The challenge checks for a specific parent process : shellscript
+The challenge will require the parent to send number of signals : 1
+Write the script as
+#!/bin/bash
+/challenge/embryoio_level97
+Run bash script in one terminal and kill -l in 2nd terminal.
+You have to kill the process for showing the flag.
