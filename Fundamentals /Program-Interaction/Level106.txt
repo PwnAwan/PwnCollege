@@ -1,0 +1,7 @@
+The challenge checks for a specific parent process : python
+The challenge will make sure that stdin is redirected from a fifo
+The challenge will make sure that stdout is a redirected from fifo
+The challenge will force the parent process to solve a number of arithmetic problems : 1
+The challenge will use the following arithmetic operations in its arithmetic problems : +*
+The complexity (in terms of nested expressions) of the arithmetic problems : 1
+Write the python script as:
