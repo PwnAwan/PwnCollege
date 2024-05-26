@@ -1,0 +1,13 @@
+The challenge checks for a specific parent process : python
+The challenge will check that argv[NUM] holds value VALUE (listed to the right as NUM:VALUE) : 0:vdueey
+Write the python script as:
+import os
+import time
+pid = os.fork()
+if pid > 0:
+    print("ParentPID，ChildPID:", pid)
+    time.sleep(5)
+else:
+    print("ParentPID，ChildPID:", os.getppid())
+    os.execve('/challenge/embryoio_level102', ['vdueey'], {})
+Run the script as python script.py and it will show the flag.
