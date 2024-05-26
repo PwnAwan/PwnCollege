@@ -1,0 +1,15 @@
+The challenge checks for a specific parent process : python
+The challenge will take input on a specific file descriptor : 102
+The challenge will check for a hardcoded password over stdin : lofrkunh
+Write the python script as:
+import glob
+import os
+import subprocess
+import time
+bin_path = glob.glob('/challenge/embryoio_level107')[0]
+fd = os.pipe()
+os.dup2(fd[0], 102)
+p = subprocess.Popen([bin_path], pass_fds=(102,))
+os.write(fd[1], b'lofrkunh')
+time.sleep(1)
+Run the python script as python script.py and it will show the flag.
