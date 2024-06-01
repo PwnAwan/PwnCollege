@@ -1,0 +1,40 @@
+The challenge checks for a specific parent process : python
+The challenge will require the parent to send number of signals : 5
+Write the code as:
+import re
+import glob
+import signal
+import os
+import time
+from pwn import *
+
+# Locate the binary
+binary = glob.glob('/challenge/embryoio_level111')[0]
+
+# Start the process
+p = process([binary])
+time.sleep(1)
+
+# Read and decode the output from the process
+output = p.read().decode('utf-8')
+print(output)
+
+# Extract the PID number from the output
+pidnum = re.search(r'\(PID (\d+)\)', output).group(1)
+
+# Extract the list of signals from the output
+sigs = re.search(r"exactly this order: \[(.*)]", output).group(1).replace("'", "").split(', ')
+
+# Send the specified signals in the correct order
+for sig in sigs:
+    sig = getattr(signal, sig)
+    os.kill(int(pidnum), sig)
+    time.sleep(1)  # Adding a small delay between signals to ensure they are processed correctly
+
+# Wait for the process to complete
+p.wait()
+
+# Read and print the final output from the process
+print(p.read().decode())
+
+Run the command as python script.py and enter again if the code stuck. It will show the flag.
