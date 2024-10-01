@@ -1,0 +1,9 @@
+Send an HTTP request using python
+
+import requests
+
+response = requests.get('http://127.0.0.1')
+print(response.status_code)  # Print the status code
+print(response.text)         # Print the response content
+
+pwn.college{gk8Esqgp0NbDClvyd9fANh3Ucxe.dBzNyMDL5MjM1QzW}
