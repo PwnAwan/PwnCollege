@@ -1,0 +1,3 @@
+Set the host header in an HTTP request using curl
+curl -H "Host: c324a577df3386fbe3c1675076de4a30" http://127.0.0.1
+pwn.college{YRoHd0shzEG1C79Ij8WiGL9GO17.dFzNyMDL5MjM1QzW}
