@@ -1,0 +1,3 @@
+Set the host header in an HTTP request using nc
+echo -e "GET / HTTP/1.1\r\nHost: fc9155af949cde05cf9ac5b14bff6173\r\nConnection: close\r\n\r\n" | nc 127.0.0.1 80
+pwn.college{YWrp8GLthVeb7an1G1f-RBmDQ5U.dJzNyMDL5MjM1QzW}
