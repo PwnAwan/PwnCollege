@@ -1,0 +1,17 @@
+Specify an argument in an HTTP request using python
+Make an HTTP request to 127.0.0.1 on port 80 to get the flag.
+The HTTP request must specify HTTP GET parameter `a` as value e993d541ce52096452aafbe323959a10
+
+import requests
+
+# Specify the parameter
+params = {'a': 'e993d541ce52096452aafbe323959a10'}
+
+# Make the request to the specified URL
+response = requests.get('http://127.0.0.1:80/', params=params)
+
+# Print the response
+print(response.status_code)
+print(response.text)
+
+pwn.college{oBGSvpWvchQaeEvSEnv94SEMiuy.dJDOyMDL5MjM1QzW}
