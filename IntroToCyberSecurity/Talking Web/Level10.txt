@@ -1,0 +1,3 @@
+URL encode a path in an HTTP request using curl
+curl http://127.0.0.1:80/71253226%20261ec8e1/57d3c194%20151b4be4
+pwn.college{IZHqaLOpAmibI0Ca3sbrwn-h-aa.ddzNyMDL5MjM1QzW}
