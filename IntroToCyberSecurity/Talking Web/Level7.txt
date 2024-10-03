@@ -1,0 +1,3 @@
+Set the path in an HTTP request using curl
+curl http://127.0.0.1:80/257694c40bb98b9efa58f54326b8577c
+pwn.college{wnkvOMO98u4fG0tYbqwDTMA3tYw.dRzNyMDL5MjM1QzW}
