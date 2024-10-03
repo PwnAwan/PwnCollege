@@ -1,0 +1,11 @@
+Set the host header in an HTTP request using python
+
+import requests
+
+url = 'http://127.0.0.1'
+headers = {'Host': '52a115c0cb4837c20593f8262b668647'}
+
+response = requests.get(url, headers=headers)
+print(response.text)
+
+pwn.college{YXjyK3PWn9vrl2Fx1cGl6PNNhTF.dNzNyMDL5MjM1QzW}
