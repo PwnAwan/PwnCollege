@@ -1,0 +1,5 @@
+Specify an argument in an HTTP request using nc
+Make an HTTP request to 127.0.0.1 on port 80 to get the flag.
+The HTTP request must specify HTTP GET parameter `a` as value 8c69aaf2b0584aa1d3e7770481d60370
+echo -e "GET /?a=8c69aaf2b0584aa1d3e7770481d60370 HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n" | nc 127.0.0.1 80
+pwn.college{gsnyiSDSPkxGwr6SM7Kj3KK641j.dFDOyMDL5MjM1QzW}
