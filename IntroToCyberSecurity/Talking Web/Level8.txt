@@ -1,0 +1,3 @@
+Set the path in an HTTP request using nc
+echo -e "GET /8b9fd11000567fe1db95608d4500d99b HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n" | nc 127.0.0.1 80
+pwn.college{AWnl2edHpOdtp9EwkriIZXyMmLQ.dVzNyMDL5MjM1QzW}
