@@ -1,0 +1,19 @@
+URL encode a path in an HTTP request using python
+
+import requests
+from urllib.parse import quote
+
+# URL encode the path
+encoded_path = quote('/bd4bdaa4 e8d54c71/b139a9c0 d36518bc')
+
+# Create the full URL
+url = f'http://127.0.0.1:80{encoded_path}'
+
+# Send the HTTP request
+response = requests.get(url)
+
+# Print the response
+print(response.status_code)
+print(response.text)
+
+pwn.college{I58xWeLoL1GClnGMsuZg15OMCDO.dlzNyMDL5MjM1QzW}
