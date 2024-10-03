@@ -1,0 +1,5 @@
+Specify an argument in an HTTP request using curl
+Make an HTTP request to 127.0.0.1 on port 80 to get the flag.
+The HTTP request must specify HTTP GET parameter `a` as value df2eddc06c1a8f8a2c10cd859a2c16d8
+curl "http://127.0.0.1:80/?a=df2eddc06c1a8f8a2c10cd859a2c16d8"
+pwn.college{MnfcnQkYu4Nhh-aZAjeWgojyz7R.dBDOyMDL5MjM1QzW}
