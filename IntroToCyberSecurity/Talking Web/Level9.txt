@@ -1,0 +1,9 @@
+Set the path in an HTTP request using python
+
+import requests
+url = 'http://127.0.0.1:80/96ce318a4a96f1ac21ddb22d168f80e9'
+response = requests.get(url)
+print(response.status_code)
+print(response.text)
+
+pwn.college{YTK5KbN3xALUSUWFuwxp9nJ4cNH.dZzNyMDL5MjM1QzW}
