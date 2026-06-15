@@ -1,1 +1,7 @@
-Open the challenge.
+Start the challenge.
+Run the server by using this command: /challenge/server & sleep 1 && curl http://challenge.localhost:80/request -H "User-Agent: Firefox
+It will show the practice flag.
+Restart the challenge in unpriviledge mode by clicking on the lock button below the terminal.
+use the above commnad again: /challenge/server & sleep 1 && curl http://challenge.localhost:80/request -H "User-Agent: Firefox
+It will give you the flag: pwn.college{w-VJddgGd_Obb7TFnLuigZkcuxN.QXzEDO0EDL5MjM1QzW}
+
