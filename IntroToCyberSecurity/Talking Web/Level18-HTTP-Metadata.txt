@@ -1,0 +1,6 @@
+Start the Challenge.
+Run the server by using: /challenge/server
+Read the code of the challenge by using: cat /challenge/server
+You will find the endpoint "/evaluate"
+Use this command to fetch the flag:  /challenge/server & sleep 1 && curl -v http://challenge.localhost:80/evaluate -H "User-Agent: Firefox"
+The flag will appear in the terminal output looks kike Nmap result: pwn.college{0nCE2TO4kqSnyJOdxvmg_bE4_i5.QX1EDO0EDL5MjM1QzW}
