@@ -1,1 +1,6 @@
 Start the challenge.
+Use this command to run the server and find the end point: grep -n "route\|def " /challenge/server
+There was an endpoint "/progress".
+Use this command to run the server and fetch the flag:/challenge/server & sleep 1 && curl http://challenge.localhost:80/progress -H "User-Agent: Firefox"
+It will show the flag in the code on the terminal. pwn.college{I838O7oLbcDkVVX5D4qnW7g9iyW.QX0EDO0EDL5MjM1QzW}
+Note: The challenge is not running on firefox: http://challenge.localhost:80/progress 
