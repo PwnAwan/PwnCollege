@@ -1,0 +1,4 @@
+Start the challenge and read the code: cat /challenge/server
+Run the server: /challenge/server &
+Use this command to find the flag: curl -X POST http://challenge.localhost/hack -d "security=xolwuhip"
+The flag will appear: pwn.college{ASUNiQBbT4ADGNsHVzWtDGFfJH2.dZDOyMDL5MjM1QzW}
