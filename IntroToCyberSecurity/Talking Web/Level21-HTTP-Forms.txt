@@ -1,0 +1,5 @@
+Start the challenge and read the code: cat /challenge/server
+Open the desktop mode and run the server by using: /challenge/server &
+Copy the http://challenge.localhost and open the browser, past and run, the form will appear.
+Submit this value in the form: xbwzdwob
+The flag will appear: pwn.college{sE7rQPVwkTgmQx0M3OH5pRxl3iR.QX2EDO0EDL5MjM1QzW}
