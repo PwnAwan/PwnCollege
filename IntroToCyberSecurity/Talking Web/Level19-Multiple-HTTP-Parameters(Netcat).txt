@@ -1,0 +1,5 @@
+Start the challnege and read the code to find the multiple parameters by using this command: cat /challenge/server
+Then again use this command: /challenge/server &
+Now pate this command in the terminal without quitting terminal: echo -ne 'GET /trial?auth_key=zznthxtm&key=mkhxkonr&unlock_code=pmqoqdhk HTTP/1.0\r\nHost: challenge.localhost\r\n\r\n' | nc challenge.localhost 80
+You will find the practice flag. To find the original flag restart the challenge in unpriviledge mode and repeat the above process.
+The original flag will appear on the screen: pwn.college{8bpUNacYMYjOqJinm5DwcUlSZE6.dRDOyMDL5MjM1QzW}
