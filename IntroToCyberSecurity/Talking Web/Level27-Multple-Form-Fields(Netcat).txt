@@ -1,0 +1,3 @@
+Start the challenge and read the code: cat /challenge/server
+Run this command to find the flag: /challenge/server & sleep 1 && BODY='unlock_code=vbemwqtf&unlock=wxqdlpqz&pin=irdvpzgf&token=eiiddxbd' && LEN=${#BODY} && printf 'POST /validate HTTP/1.1\r\nHost: challenge.localhost:80\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: %d\r\nConnection: close\r\n\r\n%s' "$LEN" "$BODY" | nc challenge.localhost 80
+The flag is: pwn.college{YV8JWA9ifE5KmEJLB5VcdwcgAnI.dBTOyMDL5MjM1QzW}
