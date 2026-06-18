@@ -1,0 +1,3 @@
+Start the challenge and read the code: cat /challenge/server
+Run this command to find the flag: /challenge/server & sleep 1 && curl -X POST http://challenge.localhost:80/trial -d "keycode=lheciolu" -d "credential=wzbgnnid" -d "solution=mrvjqgil"
+The flag is: pwn.college{otcuGvf1fvsJ5zrnsBs-qQvBwlX.dlDOyMDL5MjM1QzW}
