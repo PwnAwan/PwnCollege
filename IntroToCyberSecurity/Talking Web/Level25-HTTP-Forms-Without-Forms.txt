@@ -1,0 +1,4 @@
+Start the challenge and read the code: cat /challenge/server
+There is and endpoint /progress and the hash "mnkeibsl
+Use this command to find the flag: /challenge/server & sleep 1 && curl -X POST http://challenge.localhost:80/progress -H "User-Agent: Firefox" -d "hash=mnkeibsl"
+The flag will appear as: pwn.college{ES7K6hkkusQGUyVHrVotQZzGel4.QX3EDO0EDL5MjM1QzW}
