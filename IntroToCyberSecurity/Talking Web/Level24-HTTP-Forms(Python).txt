@@ -1,0 +1,9 @@
+Start the challenge and read the code: cat /challenge/server
+Run the server: /challenge/server &
+We need to send POST request to the target server using Python’s requests library. Run this command and find the flag:
+/challenge/server & sleep 1 && python3 -c "
+import requests
+r = requests.post('http://challenge.localhost:80/hack', data={'login_key': 'aymxaclh'})
+print(r.text)"
+I paste it directly in the terminal and it works. You can also use it in script "script.py" and run it like python3 script.py to find the flag.
+The flag is: pwn.college{QRsr8wtSnDPwM-TWTOOiV_7RS9P.dhDOyMDL5MjM1QzW}
