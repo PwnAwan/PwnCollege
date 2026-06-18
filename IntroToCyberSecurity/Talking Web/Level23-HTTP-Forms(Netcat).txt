@@ -1,0 +1,6 @@
+Start the chellenge and read the code: cat /challenge/server
+Start the server: /challenge/server &
+Or use this command to fetch the flag: /challenge/server & sleep 1 && printf 'POST /qualify HTTP/1.1\r\nHost: challenge.localhost:80\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 22\r\nUser-Agent: nc\r\n\r\nunlock_code=gjlpvxnh\r\n' | nc challenge.localhost 80
+But the response was that the server is already using port 80 and the parameter "unlock_code" value is wrong. But the value was correct or same as it is in the code. Also it was giving 403 error.
+Then I tried this command and it worked: BODY='unlock_code=gjlpvxnh' && LEN=${#BODY} && printf 'POST /qualify HTTP/1.1\r\nHost: challenge.localhost:80\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: %d\r\nConnection: close\r\n\r\n%s' "$LEN" "$BODY" | nc challenge.localhost 80
+It gives me the flag: pwn.college{gx111f0mrmloZLH36GEj9Wjd7i1.ddDOyMDL5MjM1QzW}
