@@ -1,0 +1,5 @@
+Start the challenge and read the code: cat /challenge/server
+Start the server by using: /challenge/server & sleep 2
+Use this curl command to find the hidden endpoint: curl -L http://challenge.localhost/
+It fetches the flag as well. So, doesn't need an endpoint.
+The flag is: pwn.college{0mtKFeLWn0L35IIJfUOuhhIIkPL.dhTOyMDL5MjM1QzW}
