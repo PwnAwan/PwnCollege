@@ -1,0 +1,18 @@
+Start the challenge and read the code. cat /challenge/server
+Start Terminal1 or Tab1 and start the server: /challenge/server
+Start Terminal2 or Tab2 and write the following Python file.
+cat << 'EOF' > /tmp/myredirect.py
+#!/opt/pwn.college/python
+import flask
+app = flask.Flask(__name__)
+
+@app.route("/", methods=["GET"])
+def redirector():
+    return flask.redirect("http://challenge.localhost/mission")
+
+app.run("localhost", 1337)
+EOF
+
+Run the file in the same terminal or tab by: python3 /tmp/myredirect.py
+Start Terminal 3 or Tab3 and trigger the client: /challenge/client
+It will show you the flag as: pwn.college{0a3YcLWgqqar6OUK17VBM_vp23o.QXwQDO0EDL5MjM1QzW}
