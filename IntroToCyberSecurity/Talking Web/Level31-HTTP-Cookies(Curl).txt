@@ -1,0 +1,5 @@
+Start the challenge and read the code: cat /challenge/server. But there is no server file to read the code.
+So, use curl to find the cookie: curl -v http://challenge.localhost/
+Use this command and change the cookie value by copying the cookie value using the command. cookie=ebdc3a0b608e37056df5d955445b67f7
+curl -b "cookie=ebdc3a0b608e37056df5d955445b67f7" http://challenge.localhost/
+The flag will appear as: pwn.college{AJS3KsUAxIc41_LcYSn0ZQg1xPg.dFDMzMDL5MjM1QzW}
