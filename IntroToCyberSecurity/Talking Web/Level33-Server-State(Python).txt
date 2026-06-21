@@ -1,0 +1,13 @@
+Paste the following code into the terminal, and it will give you the flag:
+cat << 'EOF' > /tmp/solve.py
+import requests
+
+session = requests.Session()
+response = session.get("http://challenge.localhost/")
+print("Status:", response.status_code)
+print("Cookies:", session.cookies.get_dict())
+print("Body:\n", response.text)
+EOF
+
+python3 /tmp/solve.py
+The flag is: pwn.college{wdOElS2XKUoRzHdqcydbj2zrxk8.dZDMzMDL5MjM1QzW}
