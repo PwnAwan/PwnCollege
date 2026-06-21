@@ -1,0 +1,6 @@
+Start the challenge.
+Try this netcat command to fetch the cookie: echo -ne 'GET / HTTP/1.0\r\nHost: challenge.localhost\r\n\r\n' | nc challenge.localhost 80
+Copy the cookie value, in my case it was: cookie=27d15df58a48995f6bc6c511cb7014cb
+Use this command and chnage the cookie value accordingly to fetch the flag:
+echo -ne 'GET / HTTP/1.0\r\nHost: challenge.localhost\r\nCookie: cookie=27d15df58a48995f6bc6c511cb7014cb\r\n\r\n' | nc challenge.localhost 80
+The flag will appear as: pwn.college{UfoClpVFchM5qNFg9ROTm4dedsd.dJDMzMDL5MjM1QzW}
