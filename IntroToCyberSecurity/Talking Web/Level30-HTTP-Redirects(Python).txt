@@ -1,0 +1,4 @@
+Start the challenge and read the code: cat /challenge/server
+Start the server:
+Use this Python command to fetch the flag: python3 -c "import requests; print(requests.get('http://challenge.localhost/').text)"
+The flag is:pwn.college{0M2S2ZE8jCPPRbnEYDrkMoJs36B.dBDMzMDL5MjM1QzW}
