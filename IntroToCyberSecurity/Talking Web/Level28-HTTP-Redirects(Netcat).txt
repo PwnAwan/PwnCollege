@@ -1,0 +1,6 @@
+Start the challenge and read the code: cat /challenge/server
+Run the server by using: /challenge/server & sleep 2, and fetch the hidden endpoint by using:
+echo -ne 'GET / HTTP/1.0\r\nHost: challenge.localhost\r\n\r\n' | nc challenge.localhost 80
+You will find the hidden endpoint "/QOwstqiR-evaluate". Now change it by using this command and fetch the flag: 
+echo -ne 'GET /QOwstqiR-evaluate HTTP/1.0\r\nHost: challenge.localhost\r\n\r\n' | nc challenge.localhost 80
+The flag will appear as: pwn.college{wnQ99xf2quHKpTTxfxdeD7VQucF.dlTOyMDL5MjM1QzW} 
