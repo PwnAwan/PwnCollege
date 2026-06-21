@@ -1,0 +1,6 @@
+Simply past this code in the terminal and it will fetch the flag: 
+python3 -c "
+import requests
+s = requests.Session()
+print(s.get('http://challenge.localhost/').text)"
+The flag is: pwn.college{o2HrzOXWJupu4RLyF5yhE6QLX-v.dNDMzMDL5MjM1QzW}
