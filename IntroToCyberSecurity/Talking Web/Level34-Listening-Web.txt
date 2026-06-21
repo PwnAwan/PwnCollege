@@ -1,0 +1,17 @@
+Run the following code to built your server: cat << 'EOF' > /tmp/myserver.py
+#!/opt/pwn.college/python
+import flask
+app = flask.Flask(__name__)
+
+@app.route("/", methods=["GET"])
+def index():
+    return "<h1>Hello from my server!</h1>"
+
+app.run("localhost", 1337)
+EOF
+
+Run this command to run the server and it will gives you the link to open in browser: python3 /tmp/myserver.py & sleep 2
+http://localhost:1337
+Click on the link and run it. It will show nothing.
+Now trigger the client: /challenge/client
+It will show you the flag: pwn.college{w_t2TfAlqCkrxFLMxN5OEt138Ek.QX5MDO0EDL5MjM1QzW}
